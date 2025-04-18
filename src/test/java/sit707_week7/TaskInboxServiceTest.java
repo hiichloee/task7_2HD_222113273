@@ -45,8 +45,7 @@ public class TaskInboxServiceTest {
     public void testFailingCaseShouldFail() {
     	System.out.println("+++ Checking non-existent task failure case +++");
         inbox.addTask("Dummy Task");
-//        assertFalse(inbox.hasTask("Another Task")); // 故意失败的测试
-        assertTrue(inbox.hasTask("Another Task"));
+        assertTrue(inbox.hasTask("Another Task")); // Intentionally failed tests
         System.out.println("--- testFailingCaseShouldFail failed." + "\n");
     }
 }
