@@ -4,4 +4,4 @@ options:
 steps:
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['clean', 'verify']
-timeout: 300s
+timeout: 300s 
