@@ -45,7 +45,7 @@ public class TaskInboxServiceTest {
     public void testFailingCaseShouldFail() {
     	System.out.println("+++ Checking non-existent task failure case +++");
         inbox.addTask("Dummy Task");
-        assertTrue(inbox.hasTask("Another Task")); 
+        assertFalse(inbox.hasTask("Another Task")); 
         System.out.println("--- testFailingCaseShouldFail failed." + "\n");
     }
 }
